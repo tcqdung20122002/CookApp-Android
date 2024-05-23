@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DangNhap">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:padding="20dp"
+            android:text="Đăng Ký"
+            android:textSize="30dp"
+            android:textAlignment="center">
+        </TextView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="50dp"
+            android:padding="20dp">
+
+            <EditText
+                android:id="@+id/txtTaikhoan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:hint="Tên Tài Khoản"
+                android:padding="8dp"
+                >
+            </EditText>
+            <EditText
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:hint="Email"
+                android:padding="8dp"
+                ></EditText>
+
+            <EditText
+                android:id="@+id/txtMatkhau"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:hint="Mật Khẩu"
+                android:padding="8dp"></EditText>
+            <EditText
+                android:id="@+id/txtXacnhanmatkhau"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:hint="Xác Nhận Mật Khẩu"
+                android:padding="8dp"></EditText>
+
+            <Button
+                android:id="@+id/btnSignup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:padding="15dp"
+                android:text="Đăng Nhập"
+                android:textSize="20dp"></Button>
+
+            <TextView
+                android:id="@+id/txtLogintext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="Đã có tài khoản ? Đăng Nhập"
+                android:textAlignment="center"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

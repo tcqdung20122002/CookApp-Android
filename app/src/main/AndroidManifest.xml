@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Cook_Program"
+        tools:targetApi="31">
+        <activity
+            android:name=".Them_Loai_Mon"
+            android:exported="false" />
+        <activity
+            android:name=".Cap_Nhat_Loai_Mon"
+            android:exported="false" />
+        <activity
+            android:name=".DangKy"
+            android:exported="false" />
+        <activity
+            android:name=".DangNhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cap_Nhat_Mon_An"
+            android:exported="false"
+            android:label="@string/title_activity_sua_mon_chinh"
+            android:theme="@style/Theme.Cook_Program" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity android:name=".DS_Mon_An" />
+        <activity android:name=".DS_Loai_Mon_An"/>
+        <activity android:name=".Them_Mon_An" />
+    </application>
+
+</manifest>
